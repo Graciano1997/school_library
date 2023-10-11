@@ -1,5 +1,5 @@
 <center>
-<h1>school_library
+<h1>OOP school library: add Person, Student and Teacher classes: add Person, Student and Teacher classes
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
@@ -22,9 +22,8 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Decode a Morse code] <a name="about-project"></a>
-This repository involves the conversion of Morse code signals into corresponding letters or numbers.
-
+# 📖 [OOP school library] <a name="about-project"></a>
+In this project, I started building the school library app. In this initial step, I implemented the classes that represents students and teachers.
 
 <a name="readme-top"></a>
 
@@ -36,7 +35,9 @@ This repository involves the conversion of Morse code signals into corresponding
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Decode a morse code to human language
+- Add Person Class
+- Add Student Class
+- Add Teacher Class
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +63,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:Graciano1997/morse_code.git
+  git clone https://github.com/Graciano1997/school_library.git
 ```
 -
 
@@ -88,13 +89,6 @@ bundle install
 - Twitter: [@OGracianoHenrique](https://twitter.com/GracianoSoft)
 - LinkedIn: [@GracianoHenrique](www.linkedin.com/in/gracianohenrique)
 
-👤 **Author**
-
-👤 **Maurice Coker**
-- GitHub: [@coker2019](https://github.com/coker2019)
-- Twitter: [@Olabisi_coker](https://twitter.com/Olabisi_coker)
-- LinkedIn: [maurice-coker-174b129b](https://linkedin.com/in/maurice-coker-174b129b)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -102,7 +96,7 @@ bundle install
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
- - Decode different codes
+ - start building the UI
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
