@@ -12,7 +12,7 @@ class Student < Person
     puts '¯(ツ)/¯'
   end
   def add_student_to_class_room(classrom)
-    classrom.add_student_to_class_room(self)
     @classrom = classrom
+    classrom.add_student_to_class_room(self)
   end
 end
