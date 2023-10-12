@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: add Person, Student and Teacher classes: add Person, Student and Teacher classes
+<h1>OOP school library: decorate a class
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
