@@ -1,6 +1,6 @@
-require_relative "base_decorator"
+require_relative 'base_decorator'
 
-class Trimmer_Decorator < Base_Decorator
+class TrimmerDecorator < BaseDecorator
   def correct_name
     if @nameable.correct_name.size > 10
       @nameable.correct_name.slice(0..10)
