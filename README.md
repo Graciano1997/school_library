@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: set up associations
+<h1>OOP school library: add basic UI
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
@@ -38,6 +38,7 @@ In this project, I started building the school library app. In this initial step
 - Add Person Class
 - Add Student Class
 - Add Teacher Class
+- Add Basic and powerfull UI/UX
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
