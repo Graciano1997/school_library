@@ -14,6 +14,7 @@ class Student < Person
 
   def add_student_to_class_room(classrom)
     @classrom = classrom
-    classrom.add_student_to_class_room(self)
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
+
