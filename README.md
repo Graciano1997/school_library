@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: decorate a class
+<h1>OOP school library: set up associations
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
