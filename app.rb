@@ -91,4 +91,8 @@ class App
       puts "Date: #{rent.date} Book: #{rent.book.title} by #{rent.book.author}"
     end
   end
+
+  def exit
+    puts 'Thank you for using this App!'
+  end
 end
