@@ -1,8 +1,7 @@
-require_relative 'libraryui'
-
-class Main < Libraryui
-  def main
-    libraryItem = Libraryui.new
-    libraryItem.start()
-  end
+require_relative 'app'
+def main
+  library=App.new
+  library.startLibrary
 end
+
+main
