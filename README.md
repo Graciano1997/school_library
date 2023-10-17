@@ -20,7 +20,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [OOP school library] <a name="about-project"></a>
 In this project, we refactoring the project's code to respect the SOLID principle
