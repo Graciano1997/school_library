@@ -2,6 +2,7 @@ require_relative 'student'
 require_relative 'teacher'
 
 class ValidatePerson
+  attr_reader :name, :age, :id
   def initialize(option)
     puts 'Name :'
     @name = gets.chomp

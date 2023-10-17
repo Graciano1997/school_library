@@ -21,7 +21,7 @@ class RentalController
     person_number = gets.chomp.to_i
     puts 'Date:  eg:2023/04/07 📅📅'
     date_of_rent = gets.chomp
-    rent = Rental.new(date_of_rent, @books[book_number], @people[person_number])
+    rent = Rental.new(date_of_rent, storage.books[book_number], storage.people[person_number])
     storage.rentals << rent unless storage.rentals.include?(rent)
     puts 'Rental created successfully 👨💳'
     puts '__________________________________________'
