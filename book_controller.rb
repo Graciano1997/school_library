@@ -27,5 +27,4 @@ class BookController
     puts 'Book Created Successfully 📖📘'
     puts '__________________________________________'
   end
-
 end

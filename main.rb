@@ -2,7 +2,6 @@ require_relative 'userinterface'
 require_relative 'app'
 
 class Main
-  # attr_accessor :option
   def main
     app = App.new
     library = UserInterface.new
