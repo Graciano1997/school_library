@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: add basic UI
+<h1>OOP school library: Refactoring code
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
@@ -23,7 +23,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [OOP school library] <a name="about-project"></a>
-In this project, I started building the school library app. In this initial step, I implemented the classes that represents students and teachers.
+In this project, we refactoring the project's code to respect the SOLID principle
 
 <a name="readme-top"></a>
 
@@ -86,9 +86,18 @@ bundle install
 
 👤 **Author**
 
+- GitHub: [@Albert](https://github.com/albertkantwi/)
+- LinkedIn: [@Albert](https://www.linkedin.com/in/albertkantwi)
+
+👤 **Author**
+
 - GitHub: [@Graciano1997](https://github.com/Graciano1997/)
-- Twitter: [@OGracianoHenrique](https://twitter.com/GracianoSoft)
 - LinkedIn: [@GracianoHenrique](www.linkedin.com/in/gracianohenrique)
+
+👤 **Author**
+
+- GitHub: [@Wonde](https://github.com/wacoo/)
+- LinkedIn: [@Wonde](https://www.linkedin.com/in/wondmagegn-abriham-b867289a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
