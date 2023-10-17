@@ -1,5 +1,4 @@
-require_relative 'student'
-require_relative 'teacher'
+require_relative 'validateperson'
 
 class PersonController
   def list_all_people(storage)
@@ -21,38 +20,17 @@ class PersonController
     puts '__________________________________________'
   end
 
+
+
   def create_person(storage)
     puts ' '
     puts '_________________CREATING A PERSON 👨👨 _________________________'
     puts 'Do you want to create a Teacher(1️⃣  ) or a Student(2️⃣  ) ?'
-    person = gets.chomp.to_i
-    if person == 1
-      puts 'Name :'
-      name = gets.chomp
-      puts 'Age :'
-      age = gets.chomp
-      puts 'Specialization :'
-      specialization = gets.chomp
-      teacher = Teacher.new(age, specialization, name)
-      storage << teacher
-      puts 'Person Created Successfully 👨🤩'
-      puts '__________________________________________'
-    elsif person == 2
-      puts 'Name :'
-      name = gets.chomp
-      puts 'Age :'
-      age = gets.chomp
-      puts 'ClassRoom :'
-      classroom = gets.chomp
-      puts 'Permission (Y/N) :'
-      permission = gets.chomp.capitalize
-      parent_permission = permission == 'Y'
-      student = Student.new(age, classroom, parent_permission, name)
-      storage << student
-      puts 'Person Created Successfully 👨🤩'
-      puts '__________________________________________'
-    else
-      puts 'Please Enrure to choose Teacher(1️⃣  ) or a Student(2️⃣  )'
+    person_option = gets.chomp.to_i
+    person=ValidatePerson.New(person_option)
+    storage << person
+    puts 'Person Created Successfully 👨🤩'
+    puts '__________________________________________'
     end
   end
 end
