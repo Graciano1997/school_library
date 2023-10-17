@@ -11,12 +11,11 @@ class ValidatePerson
     if option.to_i == 1
       @person = create_teacher
       @person
-    elsif option.to_i == 2
-      @person = create_student
-      @person
-    else
-      puts 'Sorry: For while I create only Teacher or Student'
     end
+
+    return unless option.to_i == 2
+
+    @person = create_student
   end
 
   def create_teacher
