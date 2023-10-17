@@ -67,6 +67,7 @@ class App
     factory_person = ValidatePerson.new(person_option)
     @people << factory_person.person
     puts 'Person Created Successfully 👨🤩'
+
     puts '__________________________________________'
   end
 
