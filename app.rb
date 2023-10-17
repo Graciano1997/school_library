@@ -64,11 +64,11 @@ class App
     puts '_________________CREATING A PERSON 👨👨 _________________________'
     puts 'Do you want to create a Teacher(1️⃣  ) or a Student(2️⃣  ) ?'
     person_option = gets.chomp.to_i
-    factory_person=ValidatePerson.new(person_option)
+    factory_person = ValidatePerson.new(person_option)
     @people << factory_person.person
     puts 'Person Created Successfully 👨🤩'
     puts '__________________________________________'
-    end
+  end
 
   def create_book
     puts ' '

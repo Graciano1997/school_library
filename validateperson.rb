@@ -3,23 +3,22 @@ require_relative 'teacher'
 
 class ValidatePerson
   attr_reader :person
+
   def initialize(option)
     puts 'Name :'
     @name = gets.chomp
     puts 'Age :'
     @age = gets.chomp
-    if option.to_i == 1
-      @person = create_teacher
-    end
+    @person = create_teacher if option.to_i == 1
     return unless option.to_i == 2
+
     @person = create_student
   end
 
   def create_teacher
     puts 'Specialization :'
     @specialization = gets.chomp
-    teacher=Teacher.new(@age, @specialization, @name)
-    teacher
+    Teacher.new(@age, @specialization, @name)
   end
 
   def create_student
@@ -28,7 +27,6 @@ class ValidatePerson
     puts 'Permission (Y/N) :'
     permission = gets.chomp.capitalize
     @parent_permission = permission
-    student=Student.new(@age, @classroom, @parent_permission, @name)
-    student
+    Student.new(@age, @classroom, @parent_permission, @name)
   end
 end
