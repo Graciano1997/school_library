@@ -62,34 +62,7 @@ class App
     puts '_________________CREATING A PERSON 👨👨 _________________________'
     puts 'Do you want to create a Teacher(1️⃣  ) or a Student(2️⃣  ) ?'
     person = gets.chomp.to_i
-    if person == 1
-      puts 'Name :'
-      name = gets.chomp
-      puts 'Age :'
-      age = gets.chomp
-      puts 'Specialization :'
-      specialization = gets.chomp
-      teacher = Teacher.new(age, specialization, name)
-      @people << teacher
-      puts 'Person Created Successfully 👨🤩'
-      puts '__________________________________________'
-    elsif person == 2
-      puts 'Name :'
-      name = gets.chomp
-      puts 'Age :'
-      age = gets.chomp
-      puts 'ClassRoom :'
-      classroom = gets.chomp
-      puts 'Permission (Y/N) :'
-      permission = gets.chomp.capitalize
-      parent_permission = permission == 'Y'
-      student = Student.new(age, classroom, parent_permission, name)
-      @people << student
-      puts 'Person Created Successfully 👨🤩'
-      puts '__________________________________________'
-    else
-      puts 'Please Enrure to choose Teacher(1️⃣  ) or a Student(2️⃣  )'
-    end
+    
   end
 
   def create_book
