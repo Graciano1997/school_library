@@ -1,7 +1,18 @@
+require_relative 'userinterface'
 require_relative 'app'
-def main
-  library = App.new
-  library.start_library
+
+class Main
+  # attr_accessor :option
+  def main
+    app = App.new
+    library = UserInterface.new
+    loop do
+      library.show
+      app.call(library.option) if (1..7).include?(library.option)
+      break if library.option == 7
+    end
+  end
 end
 
-main
+mainlibrary = Main.new
+mainlibrary.main

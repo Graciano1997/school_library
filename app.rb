@@ -4,6 +4,12 @@ require_relative 'rental'
 require_relative 'book'
 
 class App
+  def initialize
+    @people = []
+    @books = []
+    @rentals = []
+  end
+
   MENU_OPTION = {
     '1' => :list_all_book,
     '2' => :list_all_people,
@@ -14,30 +20,8 @@ class App
     '7' => :quit
   }.freeze
 
-  def initialize
-    @people = []
-    @books = []
-    @rentals = []
-  end
-
-  def start_library
-    description
-    operat = gets.chomp
-    MENU_OPTION.key?(operat) ? send(MENU_OPTION[operat]) : start_library
-  end
-
-  def description
-    puts '************ THE AWESOME SCHOOL LIBRARY 📚📚 **************'
-    puts ' '
-    puts '1️⃣  - List all books 📔📘📖'
-    puts '2️⃣  - List all people 👨👨'
-    puts '3️⃣  - Create a person 👨'
-    puts '4️⃣  - Create a book 📖'
-    puts '5️⃣  - Create a rental 💳'
-    puts '6️⃣  - List all rentals for a given person id 👨💳'
-    puts '7️⃣  - Exit 🚪👐'
-    puts ' '
-    print '  Please enter a number  1️⃣  to 7️⃣  :'
+  def call(option)
+    send(MENU_OPTION[option.to_s])
   end
 
   def list_all_book()
@@ -52,7 +36,6 @@ class App
       end
     end
     puts '__________________________________________'
-    start_library
   end
 
   def list_all_people()
@@ -72,7 +55,6 @@ class App
       end
     end
     puts '__________________________________________'
-    start_library
   end
 
   def create_person
@@ -91,7 +73,6 @@ class App
       @people << teacher
       puts 'Person Created Successfully 👨🤩'
       puts '__________________________________________'
-      start_library
     elsif person == 2
       puts 'Name :'
       name = gets.chomp
@@ -106,7 +87,6 @@ class App
       @people << student
       puts 'Person Created Successfully 👨🤩'
       puts '__________________________________________'
-      start_library
     else
       puts 'Please Enrure to choose Teacher(1️⃣  ) or a Student(2️⃣  )'
     end
@@ -123,7 +103,6 @@ class App
     @books << book
     puts 'Book Created Successfully 📖📘'
     puts '__________________________________________'
-    start_library
   end
 
   def create_rental
@@ -150,8 +129,6 @@ class App
     @rentals << rent unless @rentals.include?(rent)
     puts 'Rental created successfully 👨💳'
     puts '__________________________________________'
-
-    start_library
   end
 
   def list_all_rentals()
@@ -166,7 +143,6 @@ class App
       puts 'No Rental data was found for this 🆔' if rent.person.id != person_id
     end
     puts '__________________________________________'
-    start_library
   end
 
   def quit
