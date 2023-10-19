@@ -49,6 +49,18 @@ def read_people
     @people = people
   end
   
+  def get_book(title)
+    book_item = []
+    @books.each do |book|
+      if book.title == title
+        book_item = { 'title' => book.title, 'author' => book.author }
+        break
+      end
+    end
+    book_item
+  end
+
+
   def rentals_hashed(rentals)
     rental_objects = []
     rentals.each do |rental|
