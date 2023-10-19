@@ -1,3 +1,6 @@
+require_relative 'book'
+require_relative 'person'
+
 class Rental
   attr_accessor :date
   attr_reader :book, :person
@@ -6,7 +9,7 @@ class Rental
     @date = date
     @book = book
     @person = person
-    book.rentals.push(self)
-    person.rentals.push(self)
+    # book.rentals.push(self) unless book.rentals.include?(self)
+    # person.rentals.push(self) unless person.rentals.include?(self)
   end
 end

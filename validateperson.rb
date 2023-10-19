@@ -18,7 +18,7 @@ class ValidatePerson
   def create_teacher
     puts 'Specialization :'
     @specialization = gets.chomp
-    Teacher.new(@age, @specialization, @name)
+    Teacher.new(nil, @age, @specialization, @name)
   end
 
   def create_student
@@ -27,6 +27,6 @@ class ValidatePerson
     puts 'Permission (Y/N) :'
     permission = gets.chomp.capitalize
     @parent_permission = permission
-    Student.new(@age, @classroom, @parent_permission, @name)
+    Student.new(nil, @age, @classroom, @name, @parent_permission)
   end
 end

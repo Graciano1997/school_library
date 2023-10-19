@@ -1,0 +1,17 @@
+[
+  {
+    "person_id": 518,
+    "book_title": "Ruby",
+    "date": "2023/12/12"
+  },
+  {
+    "person_id": 518,
+    "book_title": "JS",
+    "date": "2023/12/12"
+  },
+  {
+    "person_id": 515,
+    "book_title": "HTML",
+    "date": "2023/11/12"
+  }
+]

@@ -3,12 +3,14 @@ require_relative 'teacher'
 require_relative 'rental'
 require_relative 'book'
 require_relative 'validateperson'
+require_relative 'persistence'
 
 class App
   def initialize
-    @people = []
-    @books = []
-    @rentals = []
+    @database = Persistence.new
+    @people = @database.people
+    @books = @database.books
+    @rentals = @database.rentals
   end
 
   MENU_OPTION = {
@@ -115,15 +117,15 @@ class App
     puts ' '
     puts ' 🆔 of Person: 👨'
     person_id = gets.chomp.to_i
-
+    puts ' '
     @rentals.each do |rent|
       puts "📅 Date: #{rent.date} 📖 Book: #{rent.book.title} by #{rent.book.author} 👨" if rent.person.id == person_id
-      puts 'No Rental data was found for this 🆔' if rent.person.id != person_id
     end
     puts '__________________________________________'
   end
 
   def quit
+    @database.save_all(@books, @rentals, @people)
     puts ' '
     puts 'Thank you for using this App! 🙏🙏'
     puts ' '
