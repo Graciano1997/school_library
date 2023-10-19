@@ -60,6 +60,26 @@ def read_people
     book_item
   end
 
+  def get_person(id)
+    person_item = []
+    @people.each do |person|
+      next unless person.id == id
+
+      person_item = if person.respond_to?(:specialization)
+                      { 'id' => person.id,
+                        'age' => person.age, 'specialization' => person.specialization,
+                        'name' => person.name }
+                    else
+                      { 'id' => person.id, 'age' => person.age,
+                        'classroom' => person.classroom,
+                        'name' => person.name,
+                        'parent_permission' => person.parent_permission }
+                    end
+      break
+    end
+    person_item
+  end
+
 
   def rentals_hashed(rentals)
     rental_objects = []
