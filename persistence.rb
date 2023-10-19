@@ -80,6 +80,27 @@ def read_people
     person_item
   end
 
+  def read_rentals
+    return if File.empty?('./db/rentals.json')
+
+    rentals_base = JSON.parse(File.read('./db/rentals.json'))
+    rentals = []
+    rentals_base.each do |rental|
+      book_item = get_book(rental['book_title'])
+      book = Book.new(book_item['title'], book_item['author'])
+      person_item = get_person(rental['person_id'])
+      person = if person_item['specialization']
+                 Teacher.new(person_item['id'], person_item['age'], person_item['specialization'],
+                             person_item['name'])
+               else
+                 Student.new(person_item['id'], person_item['age'], person_item['classroom'], person_item['name'],
+                             person_item['parent_permission'])
+               end
+      rental_item = Rental.new(rental['date'], book, person)
+      rentals << rental_item
+    end
+    @rentals = rentals
+  end
 
   def rentals_hashed(rentals)
     rental_objects = []
