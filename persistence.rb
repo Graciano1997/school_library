@@ -7,6 +7,48 @@ require_relative 'rental'
 class Persistence
   attr_reader :people, :books, :rentals
 
+  def initialize
+    unless Dir.exist?('db')
+      Dir.mkdir('db')
+      Dir.chdir('./db')
+      `touch rentals.json`
+      `touch books.json`
+      `touch people.json`
+      Dir.chdir('../')
+    end
+    @people = read_people || []
+    @books = read_books || []
+    @rentals = read_rentals || []
+  end
+
+def read_books
+    unless File.empty?('./db/books.json')
+      book_base = JSON.parse(File.read('./db/books.json'))
+      books = []
+      book_base.each do |book|
+        book_item = Book.new(book['title'], book['author'])
+        books << book_item
+      end
+    end
+    @books = books
+  end
+
+def read_people
+    return if File.empty?('./db/people.json')
+    people_base = JSON.parse(File.read('./db/people.json'))
+    people = []
+    people_base.each do |person|
+      person_item = if person['specialization']
+      Teacher.new(person['id'], person['age'], person['specialization'], person['name'])
+    else
+      Student.new(person['id'], person['age'], person['classroom'], person['name'],
+      person['parent_permission'])
+    end
+    people << person_item
+    end
+    @people = people
+  end
+  
   def rentals_hashed(rentals)
     rental_objects = []
     rentals.each do |rental|
