@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: Refactoring code
+<h1>OOP school library: Preserve data
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
@@ -22,7 +22,7 @@
 
 
 # 📖 [OOP school library] <a name="about-project"></a>
-In this project, we refactoring the project's code to respect the SOLID principle
+In this project, we preserved the library  data in files[JSON]
 
 <a name="readme-top"></a>
 
@@ -34,10 +34,7 @@ In this project, we refactoring the project's code to respect the SOLID principl
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Add Person Class
-- Add Student Class
-- Add Teacher Class
-- Add Basic and powerfull UI/UX
+- Add gui UI
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
