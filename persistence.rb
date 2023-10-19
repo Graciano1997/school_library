@@ -21,7 +21,7 @@ class Persistence
     @rentals = read_rentals || []
   end
 
-def read_books
+  def read_books
     unless File.empty?('./db/books.json')
       book_base = JSON.parse(File.read('./db/books.json'))
       books = []
@@ -33,22 +33,23 @@ def read_books
     @books = books
   end
 
-def read_people
+  def read_people
     return if File.empty?('./db/people.json')
+
     people_base = JSON.parse(File.read('./db/people.json'))
     people = []
     people_base.each do |person|
       person_item = if person['specialization']
-      Teacher.new(person['id'], person['age'], person['specialization'], person['name'])
-    else
-      Student.new(person['id'], person['age'], person['classroom'], person['name'],
-      person['parent_permission'])
-    end
-    people << person_item
+                      Teacher.new(person['id'], person['age'], person['specialization'], person['name'])
+                    else
+                      Student.new(person['id'], person['age'], person['classroom'], person['name'],
+                                  person['parent_permission'])
+                    end
+      people << person_item
     end
     @people = people
   end
-  
+
   def get_book(title)
     book_item = []
     @books.each do |book|
