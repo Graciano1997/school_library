@@ -2,7 +2,6 @@ require_relative '../module/nameable'
 require_relative '../module/person'
 require_relative '../module/student'
 
-
 describe Nameable do
   context 'When testing the Nameable  class and its methods' do
     it 'Nameable class Should have  :correct_name method' do
