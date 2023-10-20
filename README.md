@@ -1,7 +1,7 @@
 <div align="center">
 <img src="library_icon.jpeg">
  <br>
- <h1>Awesome OOP school library</h1>
+ <h1>Awesome OOP School Library</h1>
 </div>
 <!-- TABLE OF CONTENTS -->
  📗 Table of Contents
