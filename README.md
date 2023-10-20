@@ -2,7 +2,6 @@
 <h1>OOP school library: unit tests
 </h1>
 </center>
-<!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
