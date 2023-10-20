@@ -1,5 +1,5 @@
 require_relative '../module/nameable'
-require_relative '../module/Teacher'
+require_relative '../module/teacher'
 require_relative '../module/base_decorator'
 
 describe BaseDecorator do
