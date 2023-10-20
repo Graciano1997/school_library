@@ -1,9 +1,10 @@
-<center>
-<h1>OOP school library: Preserve data
-</h1>
-</center>
+<div align="center">
+<img src="library_icon.jpeg">
+ <br>
+ <h1>Awesome OOP School Library</h1>
+</div>
 <!-- TABLE OF CONTENTS -->
-# 📗 Table of Contents
+ 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -21,8 +22,8 @@
 - [📝 License](#license)
 
 
-# 📖 [OOP school library] <a name="about-project"></a>
-In this project, we preserved the library  data in files[JSON]
+# 📖 [Awesome OOP School Library] <a name="about-project"></a>
+Oop school library is an app that helps to add new students or teacher,add new books and save records of who borrowed a given book and when.
 
 <a name="readme-top"></a>
 
@@ -34,8 +35,9 @@ In this project, we preserved the library  data in files[JSON]
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Add gui UI
-
+- Add New Students or Teachers:
+- Add New Books
+- Track Borrowing Records:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -50,8 +52,6 @@ In this project, we preserved the library  data in files[JSON]
 In order to run this project you need:
 - Ruby
 - VScode Terminal
-
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -101,7 +101,7 @@ bundle install
 
 ## 🔭 Future Features <a name="future-features"></a>
 
- - start building the UI
+ - deploy the app 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +118,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project, please give a star it will make all the difference.
+> If you like this project, please give it a star it will make all the difference.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +126,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse.
+> I would like to thank Microverse for giving us support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

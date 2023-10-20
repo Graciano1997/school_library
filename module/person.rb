@@ -32,12 +32,6 @@ class Person < Nameable
   private
 
   def of_age?
-    @age >= 18
+    @age.to_i >= 18
   end
 end
-# # def initialize(id,age, name = 'Unknown', parent_permission: true)
-
-# person_object = Person.new(3,20,"dfsdf",parent_permission:false)
-# puts person_object.name
-# puts person_object.id
-# puts person_object.parent_permission
