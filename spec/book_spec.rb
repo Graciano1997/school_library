@@ -40,19 +40,6 @@ describe Book do
       expect(book_item_rentals).to be 0
     end
 
-    #  it "Should contain a rental array with 1 element" do
-    #    title="Ruby"
-    #    author="Yukihiro"
-    #    book_item = Book.new(title,author)
-    #    person_id=nil
-    #    person_age=26
-    #    person_specialization="Software Development"
-    #    person_name="Graciano Henrique"
-    #    person_object=Teacher.new(person_id, person_age, person_specialization, person_name)
-    #    date_today=Time.now
-    #    book_item.rent_rental(date_today.to_s,person_object)
-    #    expect(book_item_rentals).to be 1
-    #  end
     it '(book) should be an instance of Book class' do
       title = 'GOT'
       author = 'George Martin'
