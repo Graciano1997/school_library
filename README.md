@@ -22,7 +22,7 @@
 - [📝 License](#license)
 
 
-# 📖 [OOP school library] <a name="about-project"></a>
+# 📖 [Awesome OOP School Library] <a name="about-project"></a>
 Oop school library is an app that helps to add new students or teacher,add new books and save records of who borrowed a given book and when.
 
 <a name="readme-top"></a>
