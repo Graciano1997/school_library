@@ -1,7 +1,6 @@
-<center>
-<h1>OOP school library: unit tests
-</h1>
-</center>
+
+# OOP school library
+
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
@@ -22,7 +21,7 @@
 
 
 # 📖 [OOP school library] <a name="about-project"></a>
-In this project, we made unit test for each class and methods
+Oop school library is an app that helps to add new students or teacher,add new books and save records of who borrowed a given book and when.
 
 <a name="readme-top"></a>
 
@@ -126,7 +125,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse.
+> I would like to thank Microverse for given us the support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
