@@ -1,8 +1,6 @@
-<center>
-<div>
+<div align="center">
 <img src="library_icon.jpeg">
 </div>
-</center>
 <!-- TABLE OF CONTENTS -->
  📗 Table of Contents
 
