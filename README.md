@@ -35,9 +35,9 @@ Oop school library is an app that helps to add new students or teacher,add new b
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
--Add New Students or Teachers:
--Add New Books
--Track Borrowing Records:
+- Add New Students or Teachers:
+- Add New Books
+- Track Borrowing Records:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
