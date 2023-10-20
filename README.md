@@ -1,7 +1,5 @@
-<center>
-<h1>OOP school library: unit tests
-</h1>
-</center>
+# OOP school library
+
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
