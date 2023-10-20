@@ -1,3 +1,4 @@
+<center><img src="library_icon.jpeg"></center>
 # OOP school library
 
 <!-- TABLE OF CONTENTS -->
