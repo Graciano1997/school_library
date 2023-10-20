@@ -1,8 +1,10 @@
-<center><img src="library_icon.jpeg"></center>
-# OOP school library
-
+<center>
+<div>
+<img src="library_icon.jpeg">
+</div>
+</center>
 <!-- TABLE OF CONTENTS -->
-# 📗 Table of Contents
+ 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
