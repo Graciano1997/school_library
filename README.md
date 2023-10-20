@@ -1,5 +1,5 @@
 <center>
-<h1>OOP school library: Preserve data
+<h1>OOP school library: unit tests
 </h1>
 </center>
 <!-- TABLE OF CONTENTS -->
@@ -22,7 +22,7 @@
 
 
 # 📖 [OOP school library] <a name="about-project"></a>
-In this project, we preserved the library  data in files[JSON]
+In this project, we made unit test for each class and methods
 
 <a name="readme-top"></a>
 

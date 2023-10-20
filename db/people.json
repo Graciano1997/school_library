@@ -1,0 +1,21 @@
+[
+  {
+    "id": 642,
+    "name": "Gra",
+    "age": "12",
+    "specialization": "sdf"
+  },
+  {
+    "id": 22,
+    "name": "Graciano",
+    "age": "26",
+    "specialization": "computer"
+  },
+  {
+    "id": 245,
+    "name": "Maria",
+    "age": "24",
+    "classroom": "2A",
+    "parent_permission": "Y"
+  }
+]

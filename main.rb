@@ -1,5 +1,5 @@
-require_relative 'userinterface'
-require_relative 'app'
+require_relative 'logic/userinterface'
+require_relative 'logic/app'
 
 class Main
   def main
