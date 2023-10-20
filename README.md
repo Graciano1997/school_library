@@ -33,8 +33,9 @@ Oop school library is an app that helps to add new students or teacher,add new b
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Add gui UI
-
+-Add New Students or Teachers:
+-Add New Books
+-Track Borrowing Records:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -49,8 +50,6 @@ Oop school library is an app that helps to add new students or teacher,add new b
 In order to run this project you need:
 - Ruby
 - VScode Terminal
-
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -100,7 +99,7 @@ bundle install
 
 ## 🔭 Future Features <a name="future-features"></a>
 
- - start building the UI
+ - deploy the app 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +116,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project, please give a star it will make all the difference.
+> If you like this project, please give it a star it will make all the difference.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +124,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for given us the support.
+> I would like to thank Microverse for giving us support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
