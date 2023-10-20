@@ -1,6 +1,5 @@
 require_relative '../module/student'
 
-
 describe Student do
   context 'When testing the Student class and its methods' do
     it 'Should respond true to :classroom, :parent_permission, :name, :age, :id' do

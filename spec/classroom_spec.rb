@@ -1,7 +1,6 @@
 require_relative '../module/student'
 require_relative '../module/classroom'
 
-
 describe Student do
   context 'When testing the Student class and its methods' do
     it 'Should respond true to :label :students' do
